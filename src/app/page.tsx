@@ -76,7 +76,7 @@ const PLAN_PREMIUM = [
 const BUNDLE = [
   {
     n: "01",
-    title: "Publicidad Activa, cada mes",
+    title: "Publicidad Digital Activa, cada mes",
     text: "Campañas, segmentación, optimización semanal e informe mensual.",
   },
   {
@@ -131,10 +131,10 @@ const FAQ = [
   },
   {
     q: "¿La inversión en anuncios está incluida?",
-    a: "No. La pauta va aparte, desde $600.000 al mes, y se paga directamente a la plataforma (Meta, Google, TikTok o Pinterest). Nuestra tarifa cubre el trabajo de administrarla.",
+    a: "No. La pauta va aparte, desde $1.000.000 al mes, y se paga directamente a la plataforma (Meta, Google, TikTok o Pinterest). Nuestra tarifa cubre el trabajo de administrarla.",
   },
   {
-    q: "¿Cuántas campañas incluye Publicidad Activa?",
+    q: "¿Cuántas campañas incluye Publicidad Digital Activa?",
     a: "Hasta 3 campañas activas a la vez, en 1 plataforma.",
   },
   {
@@ -394,7 +394,7 @@ export default function Home() {
             {/* Activa */}
             <Reveal className="relative flex flex-col overflow-hidden rounded-[28px] bg-lime p-7 text-[#141414] sm:p-10">
               <Isotype className="pointer-events-none absolute -bottom-16 -right-16 block w-64 text-[#141414]/[0.07] [&_svg]:h-auto [&_svg]:w-full" />
-              <h3 className="text-3xl font-medium tracking-tight sm:text-4xl">Publicidad Activa</h3>
+              <h3 className="text-3xl font-medium tracking-tight sm:text-4xl">Publicidad Digital Activa</h3>
               <p className="mt-3 max-w-md text-[#141414]/75">
                 Para negocios que ya tienen contenido y necesitan que más personas los conozcan.
               </p>
@@ -412,7 +412,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="press mt-10 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#141414] px-6 py-3 font-medium text-lime hover:bg-[#262626]"
               >
-                Quiero Publicidad Activa
+                Quiero Publicidad Digital Activa
                 <ArrowUpRight className="size-4" aria-hidden />
               </a>
             </Reveal>
@@ -463,11 +463,8 @@ export default function Home() {
 
                 <div className="flex min-w-0 flex-col justify-between gap-10 rounded-2xl border border-border bg-[#141414]/60 p-5 sm:p-8">
                   <div>
-                    <p className="text-sm text-muted-foreground">Publicidad Activa</p>
-                    <p className="mt-1 flex flex-wrap items-baseline gap-x-2">
-                      <span className="font-display text-5xl font-black tracking-tight text-lime">$690.000</span>
-                      <span className="text-muted-foreground">COP / mes</span>
-                    </p>
+                    <p className="text-sm text-muted-foreground">Plan incluido</p>
+                    <p className="mt-1 text-2xl font-medium tracking-tight text-lime sm:text-3xl">Publicidad Digital Activa</p>
                     <ul className="mt-6 grid gap-3 text-sm text-foreground/85">
                       {[
                         "Atención por WhatsApp con nuestro equipo",
