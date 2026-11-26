@@ -6,7 +6,7 @@ export function whatsapp(message: string) {
 
 export const WA = {
   general: whatsapp("Hola BACK2GROW, quiero que manejen mi publicidad."),
-  activa: whatsapp("Hola BACK2GROW, quiero el plan Publicidad Activa ($690.000/mes)."),
+  activa: whatsapp("Hola BACK2GROW, quiero el plan Publicidad Activa."),
   premium: whatsapp("Hola BACK2GROW, quiero el plan Estrategia + Publicidad Digital."),
   oferta: whatsapp("Hola BACK2GROW, quiero la oferta con la activación incluida."),
   dudas: whatsapp("Hola BACK2GROW, tengo unas dudas antes de contratar."),

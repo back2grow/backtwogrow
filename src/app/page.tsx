@@ -83,7 +83,6 @@ const BUNDLE = [
     n: "02",
     title: "Activación publicitaria incluida",
     text: "Revisamos tus activos, organizamos cuentas, vinculamos Facebook e Instagram, configuramos pagos y accesos, y dejamos listo el píxel básico.",
-    value: "Valor normal: $450.000 a $650.000",
   },
   {
     n: "03",
@@ -395,16 +394,10 @@ export default function Home() {
             {/* Activa */}
             <Reveal className="relative flex flex-col overflow-hidden rounded-[28px] bg-lime p-7 text-[#141414] sm:p-10">
               <Isotype className="pointer-events-none absolute -bottom-16 -right-16 block w-64 text-[#141414]/[0.07] [&_svg]:h-auto [&_svg]:w-full" />
-              <p className="text-sm font-medium uppercase tracking-[0.15em]">Servicio principal</p>
-              <h3 className="mt-3 text-3xl font-medium tracking-tight sm:text-4xl">Publicidad Activa</h3>
+              <h3 className="text-3xl font-medium tracking-tight sm:text-4xl">Publicidad Activa</h3>
               <p className="mt-3 max-w-md text-[#141414]/75">
                 Para negocios que ya tienen contenido y necesitan que más personas los conozcan.
               </p>
-              <p className="mt-8 flex flex-wrap items-baseline gap-x-3">
-                <span className="font-display text-5xl font-black tracking-tight sm:text-6xl">$690.000</span>
-                <span className="font-medium">COP / mes</span>
-              </p>
-              <p className="mt-1 text-sm text-[#141414]/70">Inversión en pauta aparte, desde $600.000 al mes.</p>
               <ul className="mt-8 grid gap-3 border-t border-[#141414]/15 pt-8">
                 {PLAN_ACTIVA.map((f) => (
                   <li key={f} className="flex gap-3">
@@ -426,16 +419,10 @@ export default function Home() {
 
             {/* Premium */}
             <Reveal delay={0.08} className="flex flex-col rounded-[28px] border border-border bg-card p-7 sm:p-10">
-              <p className="text-sm font-medium uppercase tracking-[0.15em] text-muted-foreground">Servicio premium</p>
-              <h3 className="mt-3 text-3xl font-medium tracking-tight sm:text-4xl">Estrategia + Publicidad Digital</h3>
+              <h3 className="text-3xl font-medium tracking-tight sm:text-4xl">Estrategia + Publicidad Digital</h3>
               <p className="mt-3 max-w-md text-muted-foreground">
                 Para empresas que quieren construir una estrategia comercial alrededor de su publicidad.
               </p>
-              <p className="mt-8 flex flex-wrap items-baseline gap-x-3">
-                <span className="font-display text-5xl font-black tracking-tight text-foreground sm:text-6xl">$3.900.000</span>
-                <span className="font-medium text-muted-foreground">COP</span>
-              </p>
-              <p className="mt-1 text-sm text-muted-foreground">Alcance y duración se formalizan en la propuesta.</p>
               <ul className="mt-8 grid gap-3 border-t border-border pt-8">
                 {PLAN_PREMIUM.map((f) => (
                   <li key={f} className="flex gap-3 text-foreground/85">
@@ -468,11 +455,6 @@ export default function Home() {
                         <div>
                           <p className="font-medium">{b.title}</p>
                           <p className="mt-1 text-muted-foreground">{b.text}</p>
-                          {b.value && (
-                            <p className="mt-2 text-sm text-pale">
-                              <s className="decoration-lime/70">{b.value}</s> · <strong className="font-medium text-lime">incluida</strong>
-                            </p>
-                          )}
                         </div>
                       </li>
                     ))}
